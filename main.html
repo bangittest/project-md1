@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="user/css/main.css">
+</head>
+
+<body>
+    <header>
+        <!-- header top -->
+        <div class="header-nav">
+            <div class="container">
+                <div class="wrapper flexitem">
+                    <a href="#" class="trigger desktop-hide"><span class=" i ri-menu-2-line"></span></a>
+                    <div class="left flexitem">
+                        <div class="logo"><a href="/"><span class="circle"></span>.Store</a></div>
+                    </div>
+                    <div class="right">
+                        <ul class="flexitem second-links">
+                            <div class="left flexitem">
+                                <nav class="mobile-hide">
+                                    <ul class="flexitem second-links">
+                                        <li>
+                                            <div class="icon-large">
+                                                <form action="">
+                                                    <input id="search" class="spaking" type="search"
+                                                        placeholder="Nhập từ khóa cần tìm...">
+                                                    <button class="spaking_1" onclick="checkSearch()"
+                                                        type="button">Seach</button>
+                                                </form>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="header__top__right__auth account hiden"></div>
+                                        </li>
+                                        <li>
+                                            <div class="icon-large">
+                                                <a href="/user/cart.html">Giỏ hàng(0)</a>
+                                                <i class="ri-shopping-cart-line"></i>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-main moblie-hide">
+            <div class="container">
+                <div class="wrapper flexitem">
+                    <nav class="mobile-hide mobie_hide_1">
+                        <ul id="menu" class="flexitem second-links">
+                            <li><a class="nav-link" href="main.html">Trang chủ</a></li>
+                            <li><a class="nav-link" href="#">Shop</a></li>
+                            <li>
+                                <a class="nav-link" href="#">Sports
+                                    <div></div>
+                                </a>
+                            </li>
+                            <li><a class="nav-link" href="user/about.html">Về chúng tôi</a></li>
+                            <li><a class="nav-link" href="/user/contact.html">Liên hệ với chúng tôi</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- --------main-------- -->
+    <main>
+        <div class="slider">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="myslider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <div class="image object-cover">
+                                        <img src="user/img/slider/slider0.jpg" alt="">
+                                    </div>
+                                    <div class="text-content flexcol">
+                                        <h4>Giày thời trang</h4>
+                                        <h2><br>Thương Hiệu Mới
+                                            Shoes<span></span></span>
+                                        </h2>
+                                        <a href="#" class="primary-button">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <div class="image object-cover">
+                                        <img src="user/img/slider/slider1.jpg" alt="">
+                                    </div>
+                                    <div class="text-content flexcol">
+                                        <h4>Thương Hiệu Thời Trang</h4>
+                                        <h2><span><br>Brand new
+                                                Shoes<span></span></span>
+                                        </h2>
+                                        <a href="#" class="primary-button">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <div class="image object-cover">
+                                        <img src="user/img/slider/slider2.jpg" alt="">
+                                    </div>
+                                    <div class="text-content flexcol">
+                                        <h4>Thương Hiệu Thời Trang</h4>
+                                        <h2><span></span><span><br>Brand new
+                                                Shoes<span></span></span>
+                                        </h2>
+                                        <a href="#" class="primary-button">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <div class="image object-cover">
+                                        <img src="user/img/slider/slider3.jpg" alt="">
+                                    </div>
+                                    <div class="text-content flexcol">
+                                        <h4>Thương Hiệu Thời Trang</h4>
+                                        <h2><span></span><span><br>Brand new
+                                                Shoes<span></span></span>
+                                        </h2>
+                                        <a href="#" class="primary-button">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- slide -->
+        <div class="brands">
+            <div class="container">
+                <div class="wrapper flexitem">
+                    <div class="item">
+                        <a href="#"><img src="user/img/brands/zara.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="user/img/brands/samsung.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="user/img/brands/oppo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="user/img/brands/asus.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="user/img/brands/hurley.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="user/img/brands/dng.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- brands -->
+        <div class="trending">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="sectop flexitem">
+                        <h2><span class="circle"></span><span>Sản Phẩm Thịnh Hành</span></h2>
+                    </div>
+                    <div class="column">
+                        <div class="flexwrap">
+                            <div class="row products big">
+                                <div class="item">
+                                    <div class="offer">
+                                        <p>Ưu Đãi Kết Thúc</p>
+                                        <ul class="flexcenter">
+                                            <li>1</li>
+                                            <li>10</li>
+                                            <li>30</li>
+                                            <li>60</li>
+                                        </ul>
+                                    </div>
+                                    <div class="media">
+                                        <div class="image">
+                                            <a href="#">
+                                                <img src="user/img/products/apparel1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a>
+                                                </li>
+                                                <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"><span>60%</span></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(2,548)</span>
+                                        </div>
+                                        <h2 class="main-links"><a href="#">Ngày Đôi Sự Kiện Sale Lớn Duy Nhất</a>
+                                        </h2>
+                                        <div class="price">
+                                            <span class="current">129.999đ</span>
+                                            <span class="normal mini-text">289.989</span>
+                                        </div>
+                                        <div class="stock mini-text">
+                                            <div class="qty">
+                                                <span>Cổ Phần: <strong class="qty-available">108</strong></span>
+                                                <span>Đã bán: <strong class="qty-sold">3,459</strong></span>
+                                            </div>
+                                            <div class="bar">
+                                                <div class="available"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row products mini" id="rowproductsmini">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- --------trending------- -->
+        <div class="features">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="column">
+                        <div class="products main flexwrap">
+                            <div class="sectop flexitem">
+                                <h2><span class="circle" id="another"></span>Tất Cả Các Sản Phẩm</h2>
+                            </div>
+                        </div>
+                        <div class="products main flexwrap">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buttonclick">
+            <button onclick=" print()">view All</button>
+            <button onclick="print(arrA)">Giày</button>
+            <button onclick="print(arrB)">Quần áo</button>
+            <button onclick="print(arrC)">Điện tử</button>
+        </div>
+        <div class="row_products_mini" id="product1111">
+        </div>
+    </main>
+    <!-- <footer> -->
+    </div>
+    <hr>
+    <footer>
+        <div class="footer_last_item">
+            <p>CHĂM SÓC KHÁCH HÀNG</p>
+            <ul class="footer_last_item">
+                <li class="footer_last_item"><a href="">Trung tâm trợ giúp</a></li>
+                <li class="footer_last_item"><a href="">Hướng dẫn mua hàng</a></li>
+            </ul>
+        </div>
+        <div class="footer_last_item">
+            <p>GIỚI THIỆU</p>
+            <ul class="footer_last_item">
+                <li class="footer_last_item"><a href="">Điều khoản</a></li>
+                <li class="footer_last_item"><a href="">Chính sách bảo mật</a></li>
+                <li class="footer_last_item"><a href="">Tuyển dụng</a></li>
+            </ul>
+        </div>
+        <div class="footer_last_item">
+            <p>DANH MỤC SẢN PHẨM</p>
+            <ul class="footer_last_item">
+                <li class="footer_last_item"><a href="">Thời trang</a></li>
+                <li class="footer_last_item"><a href="">Đồ tiêu dùng</a></li>
+                <li class="footer_last_item"><a href="">Thiết bị điện tử</a></li>
+                <li class="footer_last_item"><a href="">Sách</a></li>
+            </ul>
+        </div>
+        <div class="footer_last_item">
+            <p>THEO DÕI CHÚNG TÔI</p>
+            <ul class="footer_last_item">
+                <li class="footer_last_item"><a href=""><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                <li class="footer_last_item"><a href=""><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                <li class="footer_last_item"><a href=""><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+            </ul>
+        </div>
+        <div class="footer_last_item">
+            <p>ĐỘI NGŨ PHÁT TRIỂN</p>
+            <a href="" style="color: red;"></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./user/js/main.js"></script>
+</body>
+
+</html>

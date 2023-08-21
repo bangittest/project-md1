@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/admin.css">
+    <title>Admin Dashboard</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="header">
+            <h1>Admin Panel</h1>
+        </div>
+        <div class="menu-item">
+            <div class="menu-icon">D</div>
+            <div class="menu-text"><a href="/admin/admin.html">Dashboard</a></div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-icon">U</div>
+            <div class="menu-text"><a href="user.html">User</a></div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-icon">P</div>
+            <div class="menu-text"><a href="product.html">Product</a></div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-icon">O</div>
+            <div class="menu-text"><a href="order.html">Order</a></div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-icon">S</div>
+            <div class="menu-text">Settings</div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="header">
+            <h1>Welcome to the user page</h1>
+            <div class="search-container">
+                <input type="search" class="search-input" id="search" placeholder="Search">
+                <button type="button" class="search-btn" onclick="checkSearch()">Search</button>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Quản Lý Khách Hàng</h1>
+            <hr>
+            <!-- <div class="search_add_scope">
+                <div>
+                    <button class="btn btn_them" onclick="toggleForm()">Thêm mới</button>
+                </div>
+            </div> -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>user_id</th>
+                        <th>username</th>
+                        <th>email</th>
+                        <th>fullname</th>
+                        <th>password</th>
+                        <th>role</th>
+                        <th>Hành động</th>
+                    </tr>
+                </thead>
+                <tbody id="table_body">
+
+                </tbody>
+            </table>
+            <div id="form_scope" class="hide">
+                <form action="" id="form">
+                    <h3>Thông tin user</h3>
+                    <div>
+                        <label for="role">Role:</label>
+                        <select id="role">
+                            <option value="ADMIN">ADMIN</option>
+                            <option value="USER">USER</option>
+                        </select>
+                    </div>
+                    <div class="btn_them_spoce">
+                        <button class="btn btn_xoa" type="button" onclick="toggleForm()">Huy</button>
+                        <button class="btn btn_them" type="submit">Lưu</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <nav aria-label="Page navigation example ">
+        <ul class="pagination float-end mx-4">
+            <!-- <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li> -->
+        </ul>
+    </nav>
+    <script src="js/user.js"></script>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/admin.css">
+    <title>Admin Dashboard</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="header">
+            <h1>Admin Panel</h1>
+        </div>
+        <div class="menu-item">
+            <div class="menu-icon">D</div>
+            <div class="menu-text"><a href="">Dashboard</a></div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-icon">U</div>
+            <div class="menu-text"><a href="/admin/user.html">User</a></div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-icon">P</div>
+            <div class="menu-text"><a href="/admin/product.html">Product</a></div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-icon">O</div>
+            <div class="menu-text"><a href="/admin/order.html">Order</a></div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-icon">S</div>
+            <div class="menu-text">Settings</div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="header">
+            <h1>Welcome to the Admin Panel</h1>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search">
+                <button class="search-btn">Search</button>
+            </div>
+            <div class="user-avatar" onclick="toggleLogoutMenu(this)">
+                <img src="img/products/apparel1.jpg" alt="">
+                <div class="logout-menu">
+                    <a href="#">trang ca nhan</a>
+                    <a href="#">cai dat</a>
+                    <a id="btn_logout" href="#" onclick="confirmLogout()">dang xuat</a>
+                </div>
+            </div>
+            <!-- <div class="user-avatar"><a href=""><img src="/imgage/products/apparel1.jpg" alt=""></a>
+            </div> -->
+
+        </div>
+        <div class="dashboard-stats">
+            <div class="stat-box">
+                <div class="stat-label">Total Sales</div>
+                <div class="stat-value">$245,000</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Total Products</div>
+                <div class="stat-value">750</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Total Orders</div>
+                <div class="stat-value">1,200</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Total Users</div>
+                <div class="stat-value">2,500</div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        function confirmLogout() {
+            let result = confirm("Bạn có muốn thoát không");
+            if (result) {
+                // Thực hiện thao tác đăng xuất tại đây
+                alert("Đăng xuất thành công!");
+                window.location.href = "/user/login.html"
+            }
+
+            // window.location.href = "../admin/adminlogin.html"
+        }
+
+        function toggleLogoutMenu(avatar) {
+            avatar.classList.toggle("active");
+            this.reset()
+        }
+
+
+    </script>
+</body>
+
+</html>

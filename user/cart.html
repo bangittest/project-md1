@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/user/css/main.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <title>Giỏ hàng</title>
+
+</head>
+
+<body>
+    <div class="header-nav">
+        <div class="container">
+            <div class="wrapper flexitem">
+                <a href="#" class="trigger desktop-hide"><span class=" i ri-menu-2-line"></span></a>
+                <div class="left flexitem">
+                    <div class="logo"><a href="/"><span class="circle"></span>.Store</a></div>
+                </div>
+                <div class="right">
+                    <ul class="flexitem second-links">
+                        <div class="left flexitem">
+                            <nav class="mobile-hide">
+                                <ul class="flexitem second-links">
+                                    <li>
+                                        <div class="icon-large">
+                                            <form action="">
+                                                <input class="spaking" type="search"
+                                                    placeholder="Nhập từ khóa cần tìm...">
+                                                <button class="spaking_1" type="submit">Seach</button>
+                                            </form>
+                                        </div>
+                                    </li>
+                                    <!-- <li>
+                                        <div class="icon-large">
+                                            <a href="login.html">Đăng nhập</a>
+                                            <i class="ri-logout-box-r-line"></i>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon-large">
+                                            <a href="register.html">Đăng ký</a>
+                                            <i class="ri-user-add-line"></i>
+                                        </div>
+                                    </li> -->
+                                    <li>
+                                        <div class="icon-large">
+                                            <a href="/user/cart.html">Giỏ hàng(0)</a>
+                                            <i class="ri-shopping-cart-line"></i>
+                                        </div>
+                                    </li>
+                                    <!-- <li>
+                                        <div class="header__top__right__auth account">
+
+                                        </div>
+                                    </li> -->
+                                </ul>
+                            </nav>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-main moblie-hide">
+        <div class="container">
+            <div class="wrapper flexitem">
+                <nav class="mobile-hide mobie_hide_1">
+                    <ul id="menu" class="flexitem second-links">
+                        <li><a href="/main.html">Trang chủ</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li>
+                            <a href="#">Sports
+                                <div class="fly-item"></div>
+                            </a>
+                        </li>
+                        <li><a href="/user/about.html">Về chúng tôi</a></li>
+                        <li><a href="contact.html">Liên hệ với chúng tôi</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    </header>
+    <div class="cart-container">
+        <div class="cart-header">
+            <h1>Giỏ hàng của bạn</h1>
+            <button class="checkout-btn">Tiến hành kiểm tra</button>
+        </div>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Serial</th>
+                    <th>Ảnh</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Giá bán</th>
+                    <th>Số lượng</th>
+                    <th>Tổng cộng</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <tr>
+                    <td>ABC123</td>
+                    <td><img src="/imgage/products/apparel1.jpg" alt="Product 1" class="product-image"></td>
+                    <td>Product 1</td>
+                    <td>$20</td>
+                    <td><input type="number" class="quantity-input"></td>
+                    <td>$20</td>
+                    <td class="action-btns">
+                        <button class="update-btn">Update</button>
+                        <button class="remove-btn">Remove</button>
+                    </td>
+                </tr> -->
+                <!-- Other rows -->
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+        </table>
+        <div class="cart-header">
+            <button class="continue-btn"><a href="/main.html">Tiếp tục mua sắm</a></button>
+
+            <h1>Tổng cộng: <h1 id="total_All">0</h1>
+            </h1>
+            <div id="checkout">
+                <textarea id="note" cols="50" rows="2" placeholder="Ghi chú ..."></textarea>
+                <br>
+                <button onclick="handleCheckOut()">Check Out</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_last_item">
+            <p>CHĂM SÓC KHÁCH HÀNG</p>
+            <ul class="footer_last_item">
+                <li class="footer_last_item"><a href="">Trung tâm trợ giúp</a></li>
+                <li class="footer_last_item"><a href="">Hướng dẫn mua hàng</a></li>
+            </ul>
+        </div>
+        <div class="footer_last_item">
+            <p>GIỚI THIỆU</p>
+            <ul class="footer_last_item">
+                <li class="footer_last_item"><a href="">Điều khoản</a></li>
+                <li class="footer_last_item"><a href="">Chính sách bảo mật</a></li>
+                <li class="footer_last_item"><a href="">Tuyển dụng</a></li>
+            </ul>
+        </div>
+        <div class="footer_last_item">
+            <p>DANH MỤC SẢN PHẨM</p>
+            <ul class="footer_last_item">
+                <li class="footer_last_item"><a href="">Thời trang</a></li>
+                <li class="footer_last_item"><a href="">Đồ tiêu dùng</a></li>
+                <li class="footer_last_item"><a href="">Thiết bị điện tử</a></li>
+                <li class="footer_last_item"><a href="">Sách</a></li>
+            </ul>
+        </div>
+        <div class="footer_last_item">
+            <p>THEO DÕI CHÚNG TÔI</p>
+            <ul class="footer_last_item">
+                <li class="footer_last_item"><a href=""><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                <li class="footer_last_item"><a href=""><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                <li class="footer_last_item"><a href=""><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+            </ul>
+        </div>
+        <div class="footer_last_item">
+            <p>ĐỘI NGŨ PHÁT TRIỂN</p>
+            <a href="" style="color: red;"></a>
+        </div>
+    </footer>
+    Copyright © 2023. All Rights Reserved.
+
+    <script src="/user/js/cart.js"></script>
+    <script src="/user/js/main.js"></script>
+</body>
+
+</html>

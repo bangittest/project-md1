@@ -1,0 +1,104 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-weight: normal;
+}
+
+.carousel-indicators {
+  margin: 0;
+}
+
+.top-selection {
+  padding: 0 20px;
+  display: flex;
+  background-color: #120635a3;
+  color: white;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+
+.top-selection p {
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.main-selection {
+  padding: 20px;
+  font-weight: normal;
+}
+
+.main-selection div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.main-selection div label {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.main-selection div input {
+  padding: 4px 8px;
+  /* border: 1px solid #ccc; */
+}
+
+.main-selection button {
+  border-radius: 5px;
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.461);
+  padding: 10px;
+}
+
+.main-selection button:hover {
+  background-color: #333;
+}
+
+.main-selection div input {
+  padding: 4px 8px;
+  /* border: 1px solid #ccc; */
+}
+
+.main-selection .login-btn {
+  background-color: #333;
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  border-radius: 4px;
+}
+
+.main-selection button:hover {
+  background-color: #333;
+}
+
+.main-selection .gender {
+  margin-bottom: 0;
+}
+
+.main-selection .gender input {
+  margin-left: 1rem;
+  margin-right: 4px;
+}
+
+.main-selection .birthday input {
+  width: 7rem;
+  padding: 0.2rem 1rem;
+  margin-right: 2rem;
+  border-radius: 4px;
+}
+
+.top-selection>p {
+  margin-top: 1rem;
+}
+
+.col-7 {
+  width: 500px;
+  border: 1px solid rgba(0, 0, 0, 0.487);
+  padding: 40px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
