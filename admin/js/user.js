@@ -1,6 +1,6 @@
 
 const data = JSON.parse(localStorage.getItem("users")) || []
-// let idGlobal = 1
+idGlobal = 1
 let indexUpdateGlobal = null
 const inputrole = document.getElementById("role")
 function Table(c = data) {
@@ -31,8 +31,13 @@ Table()
 
 
 function toggleForm(id) {
+    if (id == 0) {
+        alert('khong duoc sua')
+        return
+    }
     const data = JSON.parse(localStorage.getItem("users")) || []
     document.getElementById("form_scope").classList.toggle("hide")
+
     if (id != undefined) {
         const indexUpdate = data.findIndex(e => e.user_id == id)
         indexUpdateGlobal = indexUpdate
@@ -70,6 +75,10 @@ document.getElementById("form").addEventListener("submit", function (e) {
 })
 
 function deleteProduct(id) {
+    if (id == 0) {
+        alert('khong duoc xoa')
+        return
+    }
     const data = JSON.parse(localStorage.getItem("users")) || []
     const indexDelete = data.findIndex(e => e.user_id == id)
     const result = confirm(`Delete ${data[indexDelete].name}`)

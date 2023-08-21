@@ -29,10 +29,10 @@
             <div class="menu-icon">O</div>
             <div class="menu-text"><a href="/admin/order.html">Order</a></div>
         </div>
-        <div class="menu-item">
+        <!-- <div class="menu-item">
             <div class="menu-icon">S</div>
             <div class="menu-text">Settings</div>
-        </div>
+        </div> -->
     </div>
     <div class="content">
         <div class="header">
@@ -72,26 +72,8 @@
             </div>
         </div>
     </div>
-    <script>
-
-        function confirmLogout() {
-            let result = confirm("Bạn có muốn thoát không");
-            if (result) {
-                // Thực hiện thao tác đăng xuất tại đây
-                alert("Đăng xuất thành công!");
-                window.location.href = "/user/login.html"
-            }
-
-            // window.location.href = "../admin/adminlogin.html"
-        }
-
-        function toggleLogoutMenu(avatar) {
-            avatar.classList.toggle("active");
-            this.reset()
-        }
-
-
-    </script>
+    <script src="/admin/js/main.js"></script>
+    <script src="/admin/js/user.js"></script>
 </body>
 
 </html>
