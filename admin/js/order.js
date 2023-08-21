@@ -5,13 +5,23 @@ const inputstatus = document.getElementById("status")
 function Table(c = data) {
     // c = JSON.parse(localStorage.getItem("orders")) || []
     let stringHTML = "";
-    c.forEach(e =>
-        stringHTML +=
-        `
+    c.forEach(e => {
+        if (e.status != 1) {
+            return stringHTML += `
                     <tr>
                         <td>${e.order_id}</td>
                         <td>${e.order_at}</td>
-                        <td>${e.total}đ</td>
+                        <td>${e.total.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })}</td>
+                        <td>${e.status}</td>
+                        <td>
+                        </td>
+                    </tr>`
+        }
+        stringHTML +=
+            `<tr>
+                        <td>${e.order_id}</td>
+                        <td>${e.order_at}</td>
+                        <td>${e.total.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })}</td>
                         <td>${e.status}</td>
                         
                         <td>
@@ -19,9 +29,8 @@ function Table(c = data) {
                                 <button class="btn btn_sua" id="btn_${e.order_id}" onclick="toggleForm(${e.order_id})">See</button>
                             </div>
                         </td>
-                    </tr>
-            `
-    )
+                    </tr>`
+    })
     document.getElementById("table_body").innerHTML = stringHTML
 }
 Table()
@@ -93,6 +102,13 @@ const handlePagination = (page = 0) => {
     showPagination()
 }
 handlePagination();
+//seach
+function checkSearch() {
+    let text = document.getElementById("search").value;
+    let foundStudent = data.filter(stu => stu.status.toLowerCase().includes(text.trim().toLowerCase()));
+    Table(foundStudent);
+    // location.reload()
+}
 // logic id tự tăng
 function getNewId() {
     let idMax = 0;

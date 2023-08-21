@@ -2,7 +2,7 @@ let idPro = JSON.parse(sessionStorage.getItem("producdetail"))
 if (idPro) {
     let products = JSON.parse(localStorage.getItem("product"))
     let product = products.find(pro => pro.id == idPro)
-    console.log(product);
+    // console.log(product);
     document.querySelector(".product-detail").innerHTML = `<div class="product-images">
                         <div class="main-image">
                             <img width="200px" src="img/products/${product.img}" alt="" id="mainImage">
@@ -20,7 +20,7 @@ if (idPro) {
                         <h2>${product.name}</h2>
                         <div class="price">
                             <label for="">Giá sản phẩm:</label> <br>
-                            <span class="original-price">${product.sum} VND</span>
+                            <span class="original-price">${(product.sum * 1).toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })}</span>
 
                         </div>
                         <div class="quantity">

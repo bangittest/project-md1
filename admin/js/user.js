@@ -14,7 +14,6 @@ function Table(c = data) {
                         <td>${e.username}</td>
                         <td>${e.email}</td>
                         <td>${e.full_name}</td>
-                        <td>${e.password}</td>
                         <td>${e.role}</td>
                         <td>
                             <div class="action_col">
@@ -81,7 +80,7 @@ function deleteProduct(id) {
     }
     const data = JSON.parse(localStorage.getItem("users")) || []
     const indexDelete = data.findIndex(e => e.user_id == id)
-    const result = confirm(`Delete ${data[indexDelete].name}`)
+    const result = confirm(`Delete ${data[indexDelete].username}`)
     if (result) {
         data.splice(indexDelete, 1)
     }

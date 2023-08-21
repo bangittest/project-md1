@@ -1,4 +1,3 @@
-
 // lấy ra tài khoản đăng nhập hiện tại
 let userLogin = JSON.parse(sessionStorage.getItem("userlogin"));
 // lấy ra vị trí cần chèn tên và avatar
@@ -14,7 +13,6 @@ if (userLogin != null) { // nếu có tài khoản đăng nhập
                 <span>${userLogin.username}</span>
             </button>
             <ul id="dropdown-menu_hidenz" class="dropdown-menu hidenz" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">Profile</a></li>
               
                 <li><a class="dropdown-item" onclick="handlelLogout()" href="#">Log Out</a></li>
             </ul>
@@ -60,21 +58,20 @@ const handlelLogout = () => {
 
 
 
+//danh mục
+function showCategory() {
+    const categories = JSON.parse(localStorage.getItem("categories")) || []
+    let stringHTML = `<button onclick="print()">All</button>`
+    categories.forEach(e => {
+        stringHTML += `<button onclick="print('${e.name}')">${e.name}</button>`
+    })
+    document.getElementById("buttonclick").innerHTML = stringHTML
+}
+showCategory()
+
+
 // danh sách phân trang
 let products = JSON.parse(localStorage.getItem("product"))
-let arrC = []
-let arrB = []
-let arrA = []
-products.forEach(e => {
-    if (e.phanloai == "Loại C") {
-        arrC.push(e)
-    }
-    else if (e.phanloai == "Loại B") {
-        arrB.push(e)
-    } else {
-        arrA.push(e)
-    }
-})
 // console.log(arr);
 // products.push(...arr)
 // localStorage.setItem("product", JSON.stringify(products))
@@ -104,8 +101,8 @@ function print2() {
                                          <h4 class="main-links" onclick="hanDoclick(${e.id})"><a href = "#">${e.name}</a>
                                         </h4>
                                         <div class="price">
-                                            <span class="current">${e.sum}đ</span>
-                            <span class="normal mini-text">${Math.round(e.sum) * 1.2}₫</span>
+                                            <span class="current">${(e.sum * 1).toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })}</span>
+                            <span class="normal mini-text">${Math.round(e.sum * 1 * 1.2).toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })} </span>
                                         </div>
                                         <div class="mini-text">
                                             <p>297 Đã bán</p>
@@ -119,6 +116,12 @@ function print2() {
 }
 // ${ +e.sum + 10000 + Math.round(Math.random() * 30000) }
 function print(arr = products) {
+
+    if (arr == "" || !Array.isArray(arr)) {
+        arr = products.filter(e => e.phanloai.includes(arr))
+        console.log("==>", arr);
+    }
+
     let str = ""
     // forEach duyệt 1 mảng cụ thể
     arr.forEach(e =>
@@ -144,8 +147,8 @@ function print(arr = products) {
                         <h3 class="main-links" onclick="hanDoclick(${e.id})"><a href = "#">${e.name}</a>
                         </h3>
                         <div class="price">
-                            <span class="current">${e.sum}đ</span>
-                            <span class="normal mini-text">${Math.round(e.sum) * 1.2}₫</span>
+                            <span class="current">${(e.sum * 1).toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })}</span>
+                            <span class="normal mini-text">${Math.round(e.sum * 1 * 1.2).toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })}</span>
                         </div>
                         <div class="mini-text">
                             

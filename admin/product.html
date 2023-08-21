@@ -14,8 +14,8 @@
             <h1>Admin Panel</h1>
         </div>
         <div class="menu-item">
-            <div class="menu-icon">D</div>
-            <div class="menu-text"><a href="">Dashboard</a></div>
+            <div class="menu-icon">C</div>
+            <div class="menu-text"><a href="/admin/catagoris.html">Catagoris</a></div>
         </div>
         <div class="menu-item">
             <div class="menu-icon">U</div>
@@ -40,6 +40,14 @@
             <div class="search-container">
                 <input type="search" class="search-input" id="search" placeholder="Search">
                 <button type="button" class="search-btn" onclick="checkSearch()">Search</button>
+            </div>
+            <div class="user-avatar" onclick="toggleLogoutMenu(this)">
+                <img src="img/products/apparel1.jpg" alt="">
+                <div class="logout-menu">
+                    <!-- <a href="#">trang ca nhan</a>
+                    <a href="#">cai dat</a> -->
+                    <a id="btn_logout" href="#" onclick="confirmLogout()">dang xuat</a>
+                </div>
             </div>
             <!-- <div class="user-avatar" onclick="toggleLogoutMenu(this)">
                  <img src="/imgage/products/apparel1.jpg" alt="">
@@ -106,9 +114,7 @@
                     <div>
                         <label for="">Phan loai:</label>
                         <select id="phanloai">
-                            <option value="Loại A">Dầy</option>
-                            <option value="Loại B">Áo</option>
-                            <option value="Loại C">Điện Tử</option>
+                            <!-- <option value="Loại A">Dầy</option> -->
                         </select>
                     </div>
                     <div>
@@ -140,6 +146,8 @@
         </ul>
     </nav>
     <script src="js/product.js"></script>
+    <script src="/admin/js/main.js"></script>
+    <script src="/admin/js/user.js"></script>
 </body>
 
 </html>

@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="css/description.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/user/css/main.css">
 </head>
 
 <body>
@@ -17,7 +18,7 @@
             <div class="wrapper flexitem">
                 <a href="#" class="trigger desktop-hide"><span class=" i ri-menu-2-line"></span></a>
                 <div class="left flexitem">
-                    <div class="logo"><a href="/"><span class="circle"></span>.Store</a></div>
+                    <div class="logo"><a href="/index.html"><span class="circle"></span>.Store</a></div>
                 </div>
                 <div class="right">
                     <ul class="flexitem second-links">
@@ -45,9 +46,14 @@
                                             <i class="ri-user-add-line"></i>
                                         </div>
                                     </li> -->
+                                    <!-- <li>
+                                        <div class="header__top__right__auth account">
+
+                                        </div>
+                                    </li> -->
                                     <li>
                                         <div class="icon-large">
-                                            <a href="/user/cart.html">Giỏ hàng(0)</a>
+                                            <a href="/user/cart.html">Giỏ hàng</a>
                                             <i class="ri-shopping-cart-line"></i>
                                         </div>
                                     </li>
@@ -69,13 +75,13 @@
             <div class="wrapper flexitem">
                 <nav class="mobile-hide mobie_hide_1">
                     <ul id="menu" class="flexitem second-links">
-                        <li><a href="/main.html">Trang chủ</a></li>
-                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="/index.html">Trang chủ</a></li>
+                        <!-- <li><a href="shop.html">Shop</a></li>
                         <li>
                             <a href="#">Sports
                                 <div></div>
                             </a>
-                        </li>
+                        </li> -->
                         <li><a href="/user/about.html">Về chúng tôi</a></li>
                         <li><a href="contact.html">Liên hệ với chúng tôi</a></li>
                     </ul>
@@ -197,8 +203,6 @@
          <span>${userLogin.username}</span>
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <li><a class="dropdown-item" href="#">trang ca nhan</a></li>
-          <li><a class="dropdown-item" href="#">doi mat khau</a></li>
           <li><a class="dropdown-item" onclick="handleLogout()" href="#">dang xuat</a></li>
         </ul>
       </div>`
@@ -216,7 +220,7 @@
 
             <script src="login.js"></script>
             <script src="/user/js/description.js"></script>
-            <script src="./js/main.js"></script>
+            <!-- <script src="./js/main.js"></script> -->
             <script src="js/addCart.js"></script>
 
 

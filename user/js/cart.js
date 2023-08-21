@@ -24,9 +24,9 @@ function showCart() {
                     <td>${product.id}</td>
                     <td><img src="/user/img/products/${product.img}" alt="#" class="product-image"></td>
                     <td>${product.name}</td>
-                    <td>${product.sum}đ</td>
+                    <td>${(product.sum * 1).toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })}</td>
                     <td><input type="number" class="quantity-input" id="quantity_${element.idPro}" value="${element.quantity}" min="1" ></td>
-                    <td>${+product.sum * element.quantity}đ</td>
+                    <td>${(+product.sum * element.quantity).toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })}</td>
                     <td class="action-btns">
                         <button class="update-btn" onclick="handleUpdate(${element.idPro})" >Update</button>
                         <button class="remove-btn" onclick="handleDelete(${element.idPro})" >Remove</button>
@@ -38,7 +38,8 @@ function showCart() {
     //     document.querySelector("tfoot").innerHTML = ` <tr>
     //    <td colspan="8" style="text-align: center;">Tổng tiền : ${total}$</td>
     //  </tr>`;
-    document.getElementById("total_All").innerHTML = `${total}đ`
+    document.getElementById("total_All").innerHTML = `${(total * 1).toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })}`
+
 }
 showCart();
 

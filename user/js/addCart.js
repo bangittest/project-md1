@@ -10,7 +10,9 @@ const addToCart = (idPro) => {
 
     // nếu sp đã tồn tại trong giỏ hàng thì tăng số lượng
     let indexCartItem = userLogin.cart.findIndex(
-        (cartIt) => cartIt.idProduct == idPro
+        (cartIt) => {
+            return cartIt.idPro == idPro
+        }
     );
     if (indexCartItem > -1) {
         // đã tồn tại

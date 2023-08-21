@@ -70,6 +70,7 @@ const handleLogin = () => {
     }
     // thêm newUser vào mảng
     users = [...users, newUser];
+    alert(`đăng ký tài khoản thành công`)
     // lưu lên local
     localStorage.setItem("users", JSON.stringify(users));
     // chuyển trang tự động

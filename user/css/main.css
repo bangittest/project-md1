@@ -373,6 +373,7 @@ nav .fly-item {
     padding: 0;
     overflow: hidden;
     background-color: #f9f1f1e3;
+    display: flex;
 }
 
 #menu li {
@@ -919,6 +920,9 @@ footer {
     cursor: pointer;
 }
 
+/* .mobie_hide_1 {
+    margin: 0 auto;
+} */
 
 .dropdown-item {
     display: block;

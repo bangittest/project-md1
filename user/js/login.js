@@ -25,10 +25,10 @@ const handleLogin = () => {
     // kiểm tra quyền
     if (userLogin.role === "ADMIN") {
         // đièu hướng về admin/index
-        location.href = "/admin/admin.html"
+        location.href = "/admin/user.html"
     } else {
         // điều hướng trang về home 
-        location.href = "/main.html"
+        location.href = "/index.html"
     }
 
 }
