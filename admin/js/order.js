@@ -16,7 +16,7 @@ function Table(c = data) {
                         
                         <td>
                             <div class="action_col">
-                                <button class="btn btn_sua" onclick="toggleForm(${e.order_id})">See</button>
+                                <button class="btn btn_sua" id="btn_${e.order_id}" onclick="toggleForm(${e.order_id})">See</button>
                             </div>
                         </td>
                     </tr>
@@ -26,11 +26,12 @@ function Table(c = data) {
 }
 Table()
 
-
+let idbt = ""
 function toggleForm(id) {
     const data = JSON.parse(localStorage.getItem("orders")) || []
     document.getElementById("form_scope").classList.toggle("hide")
     if (id != undefined) {
+        idbt = id
         const indexUpdate = data.findIndex(e => e.order_id == id)
         indexUpdateGlobal = indexUpdate
         inputstatus.value = data[indexUpdate].status

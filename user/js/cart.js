@@ -82,6 +82,10 @@ let orders = JSON.parse(localStorage.getItem("orders")) || []
 
 // tạo hóa đơn
 const handleCheckOut = () => {
+    if (document.querySelector("tbody").innerHTML == "") {
+        alert("Bạn đặt ít nhất một đơn hàng")
+        return
+    }
     const products = JSON.parse(localStorage.getItem("product"))
     let order_id = getNewId(); // id hóa đơn tự tăng
     let user_id = userLogin.user_id; // id người dùng đang đăng nhập

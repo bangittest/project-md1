@@ -25,7 +25,7 @@
                                 <ul class="flexitem second-links">
                                     <li>
                                         <div class="icon-large">
-                                            <form action="">
+                                            <form action="" class="spaking_sp_1">
                                                 <input class="spaking" type="search"
                                                     placeholder="Nhập từ khóa cần tìm...">
                                                 <button class="spaking_1" type="submit">Seach</button>
@@ -86,7 +86,7 @@
     <div class="cart-container">
         <div class="cart-header">
             <h1>Giỏ hàng của bạn</h1>
-            <button class="checkout-btn">Tiến hành kiểm tra</button>
+            <button class="checkout-btn" onclick="handleCheckOut()">Tiến hành kiểm tra</button>
         </div>
         <table class="cart-table">
             <thead>
@@ -126,8 +126,8 @@
             </h1>
             <div id="checkout">
                 <textarea id="note" cols="50" rows="2" placeholder="Ghi chú ..."></textarea>
-                <br>
-                <button onclick="handleCheckOut()">Check Out</button>
+                <!-- <br> -->
+                <!-- <button onclick="handleCheckOut()">Check Out</button> -->
             </div>
         </div>
     </div>
