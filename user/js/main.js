@@ -95,7 +95,7 @@ function print2() {
                                                 <li><a href=""><i class="ri-shuffle-line"></i></a></li>
                                             </ul>
                                         </div>
-                                        <div class="discount circle flexcenter"><span>33%</span></div>
+                                        <div class="discount circle flexcenter"><span>${Math.floor(Math.random() * 11) + 20}%</span></div>
                                     </div>
                                     <div class="content">
                                          <h4 class="main-links" onclick="hanDoclick(${e.id})"><a href = "#">${e.name}</a>
@@ -105,7 +105,7 @@ function print2() {
                             <span class="normal mini-text">${Math.round(e.sum * 1 * 1.2).toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })} </span>
                                         </div>
                                         <div class="mini-text">
-                                            <p>297 Đã bán</p>
+                                            <p>${Math.floor(Math.random() * 300) + 1} Đã bán</p>
                                             <p>Miễn phí vận chuyển</p>
                                         </div>
                                     </div>
@@ -141,7 +141,7 @@ function print(arr = products) {
                                 <li><a href=""><i class="ri-shuffle-line"></i></a></li>
                             </ul>
                         </div>
-                        <div class="discount circle flexcenter"><span>SALE</span></div>
+                        <div class="discount circle flexcenter"><span>${Math.floor(Math.random() * 11) + 5}%</span></div>
                     </div>
                     <div class="content">
                         <h3 class="main-links" onclick="hanDoclick(${e.id})"><a href = "#">${e.name}</a>

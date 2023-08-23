@@ -1,0 +1,143 @@
+// categories=
+[
+    {
+        "id": 1,
+        "name": "quần áo",
+        "description": "quần áo"
+    },
+    {
+        "id": 2,
+        "name": "giày",
+        "description": "giày"
+    },
+    {
+        "id": 3,
+        "name": "điện tử",
+        "description": "điện tử"
+    },
+    {
+        "id": 4,
+        "name": "game",
+        "description": "game"
+    }
+]
+//  product = 
+[
+    {
+        "id": 1,
+        "name": "Áo nam dáng dài",
+        "sum": "140000",
+        "phanloai": "quần áo",
+        "stock": "14",
+        "description": "áo đẹp ",
+        "img": "apparel1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Giày nam sneakers thể thao",
+        "sum": "100000",
+        "phanloai": "giày",
+        "stock": "100",
+        "description": "Đế giày được thiết kế chịu ma sát tốt",
+        "img": "shoe5.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Giày Thể Thao Đế Dày",
+        "sum": "122000",
+        "phanloai": "giày",
+        "stock": "100",
+        "description": "Nó được làm bằng vật liệu chất lượng cao, đủ bền để bạn mặc hàng ngày!",
+        "img": "shoe1-1.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Áo Xốp Nhăn Cổ Tròn",
+        "sum": "119000",
+        "phanloai": "quần áo",
+        "stock": "100",
+        "description": "- Hàng không đúng hình thức, kiểu dáng như quý khách đặt hàng ",
+        "img": "apparel2.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Áo thun nữ Banamo Fashion ",
+        "sum": "99000",
+        "phanloai": "quần áo",
+        "stock": "100",
+        "description": "Áo thun nữ Banamo Fashion áo thun trơn cổ tròn nhúm eo vạt chéo 3112",
+        "img": "apparel6.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Điện Thoại di động mới ",
+        "sum": "23000000",
+        "phanloai": "điện tử",
+        "stock": "10",
+        "description": "Mẫu số: i14 Pro\nLoại chip: Qualcomm 888+DECA",
+        "img": "electronic2.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Tai Nghe Chụp Tai Bluetooth ",
+        "sum": "50000",
+        "phanloai": "điện tử",
+        "stock": "100",
+        "description": "Tên sản phẩm : tai nghe Chụp Tai Bluetooth Y08\n✔️  Chất liệu: ABS",
+        "img": "electronic3.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Giày nữ seaker",
+        "sum": "145000",
+        "phanloai": "giày",
+        "stock": "100",
+        "description": "Các môn thể thao áp dụng: mùa xuân",
+        "img": "shoe1-3.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Cáp Sạc Nhanh",
+        "sum": "57999",
+        "phanloai": "điện tử",
+        "stock": "100",
+        "description": "Chất liệu silicone lỏng mềm mại thân thiện với da",
+        "img": "electronic4.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Giày Chelsea Boots",
+        "sum": "99400",
+        "phanloai": "giày",
+        "stock": "100",
+        "description": "TIBAS chuyên Sỉ và Lẻ những mặt hàng giày dép da thật 100%",
+        "img": "shoe1.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Áo nữ dáng dài",
+        "sum": "98000",
+        "phanloai": "quần áo",
+        "stock": "100",
+        "description": "Hàng shop có sẵn rồi ạ khách yêu tranh thủ giá đang sale để vợt luôn nhé🤣",
+        "img": "apparel3.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Giày sneaker AF1",
+        "sum": "134000",
+        "phanloai": "giày",
+        "stock": "100",
+        "description": "✔️ Kiểu dáng hot trend của năm nay và còn kéo dài trong những năm tiếp theo. ",
+        "img": "shoe1-2.jpg"
+    },
+    {
+        "id": 13,
+        "name": "maba",
+        "sum": "23000000",
+        "phanloai": "game",
+        "stock": "100",
+        "description": "moba",
+        "img": "electronic1.jpg"
+    }
+]

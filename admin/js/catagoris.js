@@ -5,7 +5,7 @@ const inputdescription = document.getElementById("description")
 //hàm vẽ
 function Table(c = data) {
     // c.sort((a, b) => b.id - a.id);
-    c = JSON.parse(localStorage.getItem("categories")) || []
+    // c = JSON.parse(localStorage.getItem("categories")) || []
     let stringHTML = "";
     c.forEach(e => stringHTML +=
         `

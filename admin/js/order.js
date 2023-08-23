@@ -1,5 +1,5 @@
 const data = JSON.parse(localStorage.getItem("orders")) || []
-// let idGlobal = 1
+
 let indexUpdateGlobal = null
 const inputstatus = document.getElementById("status")
 function Table(c = data) {

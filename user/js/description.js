@@ -21,7 +21,7 @@ if (idPro) {
                         <div class="price">
                             <label for="">Giá sản phẩm:</label> <br>
                             <span class="original-price">${(product.sum * 1).toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })}</span>
-
+                           
                         </div>
                         <div class="quantity">
                             <div class="pro-qty">

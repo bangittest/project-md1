@@ -1,5 +1,4 @@
 const data = JSON.parse(localStorage.getItem("product")) || []
-const categories = JSON.parse(localStorage.getItem("categories")) || []
 let indexUpdateGlobal = null
 const inputName = document.getElementById("name")
 const inputSum = document.getElementById("sum")
@@ -7,6 +6,7 @@ const inputphanLoai = document.getElementById("phanloai")
 const inputstock = document.getElementById("stock")
 const inputdescription = document.getElementById("description")
 //hàm vẽ
+const categories = JSON.parse(localStorage.getItem("categories")) || []
 function paint() {
     let strPaint = categories.reduce((str, e) => str + `<option value="${e.name}">${e.name}</option>`, "")
     document.getElementById("phanloai").innerHTML = strPaint
@@ -118,6 +118,7 @@ function checkSearch() {
     let text = document.getElementById("search").value;
     let foundStudent = data.filter(stu => stu.name.toLowerCase().includes(text.trim().toLowerCase()));
     Table(foundStudent);
+    // handlePagination();
     // location.reload()
 }
 
@@ -182,3 +183,4 @@ function confirmLogout() {
 function toggleLogoutMenu(avatar) {
     avatar.classList.toggle("active");
 }
+

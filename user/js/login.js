@@ -26,7 +26,11 @@ const handleLogin = () => {
     if (userLogin.role === "ADMIN") {
         // đièu hướng về admin/index
         location.href = "/admin/user.html"
-    } else {
+    } else if (userLogin.role === "BLOCK") {
+        document.getElementById("error").innerHTML = "tài khoản của bạn đang bị khóa, liên hệ admin để mở khóa"
+        this.reset()
+    }
+    else {
         // điều hướng trang về home 
         location.href = "/index.html"
     }
